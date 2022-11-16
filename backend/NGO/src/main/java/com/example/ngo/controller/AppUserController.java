@@ -2,14 +2,13 @@ package com.example.ngo.controller;
 
 
 import com.example.ngo.entity.AppUser;
+import com.example.ngo.exception.UserNotFoundException;
+import com.example.ngo.model.LoginCredentials;
 import com.example.ngo.service.AppUserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import java.net.URI;
@@ -30,6 +29,12 @@ public class AppUserController {
 
         return  ResponseEntity.created(uri).body(userService.registerUser(appUser));
 
+    }
+
+    @GetMapping("/userLogin")
+    public ResponseEntity<String> searUserByEmail(@RequestBody LoginCredentials credentials)
+            throws UserNotFoundException {
+        return ResponseEntity.ok().body(userService.searUserByEmail(credentials));
     }
 
 }
