@@ -17,6 +17,7 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @Entity
 @Builder
+@Table(name = "app_user")
 public class AppUser {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
