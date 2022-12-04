@@ -4,6 +4,7 @@ import Row from "react-bootstrap/Row";
 import Image from "react-bootstrap/Image";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
+import "./Showcase.scss";
 
 const Showcase = () => {
   return (
