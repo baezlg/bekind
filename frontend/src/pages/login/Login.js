@@ -1,16 +1,17 @@
 import React from "react";
-import AboutArea from "../../components/aboutArea/AboutArea";
 import Footer from "../../components/common/footer/Footer";
 import Header from "../../components/common/header/Header";
+import LoginArea from "../../components/loginArea/LoginArea";
+import "./Login.scss";
 
-const About = () => {
+const Login = () => {
   return (
-    <div>
+    <div className="login">
       <Header />
-      <AboutArea />
+      <LoginArea />
       <Footer />
     </div>
   );
 };
 
-export default About;
+export default Login;

@@ -1,16 +1,18 @@
 import React from "react";
-import AboutArea from "../../components/aboutArea/AboutArea";
 import Footer from "../../components/common/footer/Footer";
 import Header from "../../components/common/header/Header";
+import RegisterArea from "../../components/registerArea/RegisterArea";
 
-const About = () => {
+import "./Register.scss";
+
+const Register = () => {
   return (
-    <div>
+    <div className="register">
       <Header />
-      <AboutArea />
+      <RegisterArea />
       <Footer />
     </div>
   );
 };
 
-export default About;
+export default Register;

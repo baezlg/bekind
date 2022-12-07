@@ -1,0 +1,33 @@
+.aboutArea {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  .wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    .about-left {
+      height: 600px;
+      flex: 1;
+      position: relative;
+
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .about-right {
+      flex: 1;
+
+      button {
+        padding: 12px 14px;
+        outline: none;
+        border: none;
+      }
+    }
+  }
+}

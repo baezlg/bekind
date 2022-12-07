@@ -1,16 +1,16 @@
 import React from "react";
-import AboutArea from "../../components/aboutArea/AboutArea";
 import Footer from "../../components/common/footer/Footer";
 import Header from "../../components/common/header/Header";
+import ContactArea from "../../components/contactArea/ContactArea";
 
-const About = () => {
+const Contact = () => {
   return (
     <div>
       <Header />
-      <AboutArea />
+      <ContactArea />
       <Footer />
     </div>
   );
 };
 
-export default About;
+export default Contact;

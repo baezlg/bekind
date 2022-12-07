@@ -1,0 +1,80 @@
+.loginArea {
+  &-wrap {
+    display: flex;
+    padding: 100px 0;
+
+    .left {
+      flex: 1;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .field {
+          width: 427px;
+          height: 78px;
+          margin-bottom: 10px;
+          background: #0c547e;
+          border-radius: 50px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          letter-spacing: -0.005em;
+          text-transform: capitalize;
+          color: #ffffff;
+
+          &::-webkit-input-placeholder {
+            /* Edge */
+            color: #ffffff;
+          }
+
+          &:-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: #ffffff;
+          }
+
+          &::placeholder {
+            color: #ffffff;
+          }
+        }
+        .submit {
+          width: 373px;
+          height: 72px;
+          left: 221px;
+          top: 2444px;
+
+          background: linear-gradient(
+            180deg,
+            rgba(30, 87, 98, 0.9) 26.56%,
+            rgba(43, 139, 196, 0.9) 100%
+          );
+          border-radius: 100px;
+        }
+      }
+    }
+    .right {
+      flex: 1;
+      p {
+        font-family: "Oregano";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 96px;
+        line-height: 74px;
+        /* or 78% */
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.055em;
+
+        color: #ffffff;
+
+        transform: rotate(0.1deg);
+      }
+    }
+  }
+}
